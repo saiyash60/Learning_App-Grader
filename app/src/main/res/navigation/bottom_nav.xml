@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/home">
+
+<fragment android:id="@+id/home"
+    android:label="Home"
+    android:name="com.slpproject.slp_project.ui.home.HomeFragment"
+    tools:layout="@layout/fragment_home"/>
+
+    <fragment android:id="@+id/leaderboard"
+        android:label="leaderboard"
+        android:name="com.slpproject.slp_project.ui.leaderboard.leaderboardFragment"
+        tools:layout="@layout/fragment_leaderboard"/>
+
+    <fragment android:id="@+id/account"
+        android:label="account"
+        android:name="com.slpproject.slp_project.ui.account.accountFragment"
+        tools:layout="@layout/fragment_account"/>
+</navigation>

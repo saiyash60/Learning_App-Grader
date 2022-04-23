@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "960785215307",
+    "project_id": "slp-project-59ce2",
+    "storage_bucket": "slp-project-59ce2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960785215307:android:dfb30d9443861837c082ce",
+        "android_client_info": {
+          "package_name": "com.slpproject.slp_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960785215307-l8pdj5857u9qhnilsk693gc4d024don7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQWJpzLMU22JUIDtUlbNaa6JaQm-rD6Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960785215307-l8pdj5857u9qhnilsk693gc4d024don7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

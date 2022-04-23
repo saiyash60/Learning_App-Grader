@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_quesion"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:gravity="center"
+        android:fontFamily="@font/merriweather"
+        android:textColor="@color/black"
+        android:text="Question No 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:elevation="5dp"
+        android:translationZ="3dp"
+        />
+
+    <Button
+        android:id="@+id/optionA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/unselected_btn"
+        android:elevation="3dp"
+        android:fontFamily="@font/merriweather"
+        android:stateListAnimator="@null"
+        android:text="Option A"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:translationZ="3dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/optionB"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/merriweather"
+        android:text="Option B"
+        android:background="@drawable/unselected_btn"
+        android:elevation="3dp"
+        android:translationZ="3dp"
+        android:stateListAnimator="@null"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/optionC"
+        android:textColor="@color/black"
+        android:fontFamily="@font/merriweather"
+        android:textSize="16sp"
+        android:text="Option C"
+        android:background="@drawable/unselected_btn"
+        android:elevation="3dp"
+        android:translationZ="3dp"
+        android:stateListAnimator="@null"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/optionD"
+        android:textColor="@color/black"
+        android:fontFamily="@font/merriweather"
+        android:textSize="16sp"
+        android:text="Option D"
+        android:background="@drawable/unselected_btn"
+        android:elevation="3dp"
+        android:translationZ="3dp"
+        android:stateListAnimator="@null"
+        />
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:backgroundTint="@color/white"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_quesID"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/merriweather"
+            android:text="1/20"
+            android:textAlignment="center"
+            android:textColor="#00948C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_timer"
+            android:layout_weight="1"
+            android:fontFamily="@font/merriweather"
+            android:textAlignment="center"
+            android:text="20:15 min"
+            android:textColor="#00948C"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SubmitB"
+            android:fontFamily="@font/merriweather"
+            android:layout_weight="1"
+            android:background="@drawable/submit_button"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/ll4"
+        android:layout_height="wrap_content"
+        android:background="#006E5F"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+
+        <TextView
+            android:id="@+id/qa_catName"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/merriweather"
+            android:textAlignment="center"
+            android:text="Basic Coding"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:id="@+id/qa_bookmarkB"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/bookmark_icon"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/ques_list_gridB"
+            android:layout_weight="1"
+            android:src="@drawable/grid_icon"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll3"
+        android:background="#006E5F"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/prev_quesB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:background="#006E5F"
+            android:src="@drawable/arrow_left_icon"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/clear_selB"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:text="Clear Selection"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/markB"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_border"
+            android:text="Mark for Review"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/next_quesB"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:background="#006E5F"
+            android:src="@drawable/arrow_right_icon"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/question_view"
+        android:background="#F2FEDC"
+        app:layout_constraintBottom_toTopOf="@+id/ll3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll4"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/mark_image"
+        android:visibility="gone"
+        android:src="@drawable/review"
+        android:elevation="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll4"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
