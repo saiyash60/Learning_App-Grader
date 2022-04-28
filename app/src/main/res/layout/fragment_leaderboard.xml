@@ -8,33 +8,33 @@
     android:background="#F2FEDC">
 
     <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="18dp"
-        android:id="@+id/ll1"
+        android:layout_marginTop="16dp"
         android:background="#C2E1BF"
-        android:orientation="vertical"
         android:elevation="3dp"
+        android:orientation="vertical"
+        android:paddingTop="18dp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/total_users"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/total_users"
-            android:text="Total Users : 0"
-            android:fontFamily="@font/merriweather"
-            android:textColor="@color/black"
             android:layout_marginLeft="29dp"
-            android:layout_marginBottom="8dp">
-        </TextView>
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/merriweather"
+            android:text="Total Users : 0"
+            android:textColor="@color/black"></TextView>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="?android:attr/listDivider"
-            >
+            android:background="?android:attr/listDivider">
 
         </View>
 
